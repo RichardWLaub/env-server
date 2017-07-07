@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  env_server:
+    image: rwlaub/env-server
+    ports:
+    - "80:8000"
+    env_file:
+      - variables.env
